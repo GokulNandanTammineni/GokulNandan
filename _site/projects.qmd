@@ -1,0 +1,8 @@
+---
+
+Projects
+{quarto,
+quarto::doc_list(
+  dir = ""C:\Users\Admin\Downloads\gokulnandan.github.io\Projects.qmd"",
+  exclude = c("*.ipynb", "post")
+---
