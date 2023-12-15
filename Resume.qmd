@@ -1,0 +1,23 @@
+---
+title: "Resume"
+format: html
+output:
+  quarto::quarto_html:
+    self_contained: false
+    
+---
+
+<iframe
+  width="800"
+  height="800"
+  src="gokulnandanresume.pdf">
+</iframe>
+ 
+```{r}
+
+ 
+
+
+```
+
+---

@@ -1,0 +1,84 @@
+---
+title: "Insight Data Analysis"
+format: html
+editor: visual
+---
+
+## **Insight Data Analysis**
+
+**Understand the Dataset Structure**:
+
+```{r}
+library(readxl)
+airbnb_data <- read_excel("airbnb_data.xlsx")
+library (ggplot2)
+str(airbnb_data)
+```
+
+**Summary Statistics**:
+
+```{r}
+summary(airbnb_data)
+```
+
+**Visualizations**:
+
+Use **`ggplot2`** to visualize relationships and distributions, for example:
+
+```{r}
+ggplot(airbnb_data, aes(x=price)) + geom_histogram(bins=50)
+ggplot(airbnb_data, aes(x=neighbourhood_group, y=price)) + geom_boxplot()
+
+```
+
+**Check for Missing Values**:
+
+```{r}
+sapply(airbnb_data, function(x) sum(is.na(x)))
+
+```
+
+**Data Cleaning and Preprocessing**
+
+-   **Handle Missing Values**: Impute or remove missing values depending on their impact.
+
+-   **Feature Selection**: Choose relevant features for your model. For example, predicting **`price`** based on **`room_type`**, **`number_of_reviews`**, etc.
+
+-   **Encoding Categorical Variables**: Use one-hot encoding for categorical variables.
+
+-   **Data Transformation**: Normalize or scale numerical features if necessary.
+
+    **Building a Linear Regression Model**
+
+    **Simple Linear Regression**:
+
+    ```{r}
+    model_simple <- lm(price ~ number_of_reviews, data=airbnb_data)
+    summary(model_simple)
+    ```
+
+**Multiple Linear Regression**:
+
+```{r}
+model_multiple <- lm(price ~ neighbourhood_group + room_type + number_of_reviews, data=airbnb_data)
+summary(model_multiple)
+
+```
+
+**Model Diagnostics**
+
+-   Check assumptions of linear regression such as linearity, homoscedasticity, and normality of residuals.
+
+**Model Validation**
+
+-   Use cross-validation to assess model performance.
+
+**Model Improvement**
+
+-   Explore different combinations of features.
+
+-   Consider transforming features or using polynomial terms for non-linear relationships.
+
+**Conclusion**
+
+This process offers a systematic approach to building a linear regression model using the NYC Airbnb dataset. It's essential to understand each step thoroughly for robust model development and accurate insights.

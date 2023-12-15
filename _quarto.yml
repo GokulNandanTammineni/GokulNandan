@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Gokul Nandan Tammineni"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Resume.qmd
+        text: Resume
+      - href: Blog1.qmd
+        text: Blog
+
+    
+
+format:
+  html:
+    theme: sandstone
+    css: styles.css
+
+    toc: true
+
+editor: source

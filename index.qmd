@@ -1,0 +1,36 @@
+---
+title: "Gokul Nandan Tammineni"
+image: gokulnandan.jpg
+resources: gokulnandanresume.pdf
+format: html
+about: 
+  template: marquee
+  image-shape: rectangle
+  image-width: 18em
+  
+  links:
+  - text: Contact
+    icon: call
+    href: tel:+19405369969
+  - text: Email
+    icon: envelope
+    href: mailto:gokulnandantammineni@my.unt.edu
+  - text: GitHub
+    icon: github
+    href: https://github.com/GokulNandanTammineni
+  - text: Resume
+    icon: file-text
+    href: gokulnandanresume.pdf
+  id: ppc
+  
+---
+
+::: {#ppc style="Blue"}
+Hello, I'm Gokul Nandan, currently on an exciting journey pursuing my Master of Science in Advanced Data Analytics at the University of North Texas. My journey in data science is rooted in a Bachelor of Technology in Aeronautical Engineering from India, where I developed a passion for sustainable innovations, particularly in agriculture.
+
+My projects range from enhancing sustainability in farming through vertical farm models to analyzing e-commerce data. These experiences have honed my skills in data analysis, documentation, and process improvement, making me adept at translating data insights into strategic actions.
+
+Proficient in tools like Tableau, RStudio, Python, and Microsoft Office, I'm adept at turning data insights into effective strategies.
+
+As I continue to evolve in this dynamic field, I remain committed to leveraging my skills in data analytics to drive innovation, sustainability, and efficiency in various sectors. Join me in this journey as I share insights, experiences, and stories from the fascinating world of data analytics.
+:::
